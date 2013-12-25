@@ -13,17 +13,16 @@ $(function(){
 			
 			peronFlg = true;
 
-			if (z > 40 && y > 20) {
+			if (z > 30 && y > 20) {
 				//スカートめくり判定
 				$("body").css({"background":"#ff0000"});
+				document.location = "success.html";
 				
 			} else {
 				//スカートめくれない判定
 				$("body").css({"background":"#0000ff"});			
+				document.location = "not.html";
 			}
-
-			document.getElementById('test1').innerHTML = z;
-			document.getElementById('test2').innerHTML = y;
 		}
 
 	});
